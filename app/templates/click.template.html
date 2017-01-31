@@ -1,0 +1,6 @@
+<div class="click">
+  <h4>Click ahaha {{name}}</h4>
+  <button type="button" (click)="change(true)">+</button>
+  <button type="button" (click)="change(false)">-</button>
+  <input type="text" [ngModel]="userName" (ngModelChange)="onNameChange($event)" />
+</div>

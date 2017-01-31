@@ -7,5 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class ChildComponent {
     name: string = "Евгений";
-    @Input() secondName: number = "ss";
+    clicks: number = 0;
+    @Input() secondName: string = "ss";
+    onChanged(increased) {
+      console.log(increased);
+      increased == true ? this.clicks++ : this.clicks--;
+    }
 }

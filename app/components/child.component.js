@@ -12,11 +12,16 @@ var core_1 = require('@angular/core');
 var ChildComponent = (function () {
     function ChildComponent() {
         this.name = "Евгений";
+        this.clicks = 0;
         this.secondName = "ss";
     }
+    ChildComponent.prototype.onChanged = function (increased) {
+        console.log(increased);
+        increased == true ? this.clicks++ : this.clicks--;
+    };
     __decorate([
         core_1.Input(), 
-        __metadata('design:type', Number)
+        __metadata('design:type', String)
     ], ChildComponent.prototype, "secondName", void 0);
     ChildComponent = __decorate([
         core_1.Component({
