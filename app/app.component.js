@@ -8,8 +8,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
-        this.name = '';
+        this.name = 'Petya';
+        this.age = 12;
+        this.count = 0;
     }
+    AppComponent.prototype.increase = function ($event) {
+        this.count++;
+        console.log($event);
+        console.log("name: " + this.name);
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([

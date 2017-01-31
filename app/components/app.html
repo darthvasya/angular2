@@ -1,2 +1,9 @@
-<h1>Hello Angular 2</h1>
+<h1>Hello Angular <span>{{name}}</span></h1>
 <p>Angular 2 представляет модульную архитектуру приложения</p>
+<p>И мне {{age}} лет</p>
+<input type="text" name="" [value] = "name">
+<input type="text" name="" [(ngModel)] = "name">
+
+<h2>Count of clicks {{count}}</h2>
+<button type="button" name="button" (click) = "increase()">Jmyak</button>
+<button type="button" name="button" on-click = "increase($event)">Jmyak</button>
