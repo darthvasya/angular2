@@ -1,9 +1,11 @@
-<child-comp><h3>Привитанни, витаю усих, асабиста {{name}}. Количество скачков {{count}}</h3></child-comp>
+<child-comp [secondName] = "secName"><h3>Привитанни, витаю усих, асабиста {{name}}. Количество скачков {{count}}</h3></child-comp>
 <h1>Hello Angular <span>{{name}}</span></h1>
 <p>Angular 2 представляет модульную архитектуру приложения</p>
 <p>И мне {{age}} лет</p>
 <input type="text" name="" [value] = "name">
 <input type="text" name="" [(ngModel)] = "name">
+
+<input type="text" [(ngModel)] = "secName">
 
 <h2>Count of clicks {{count}}</h2>
 <button type="button" name="button" (click) = "increase()">Jmyak</button>
