@@ -6,25 +6,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.name = 'Petya';
-        this.age = 12;
-        this.count = 0;
+var ChildComponent = (function () {
+    function ChildComponent() {
+        this.name = "Евгений";
     }
-    AppComponent.prototype.increase = function ($event) {
-        this.count++;
-        console.log($event);
-        console.log("name: " + this.name);
-    };
-    return AppComponent;
+    return ChildComponent;
 }());
-AppComponent = __decorate([
+ChildComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        templateUrl: 'app/templates/app.html',
-        styleUrls: ['app/css/style.css']
+        selector: 'child-comp',
+        templateUrl: 'app/templates/child.template.html',
+        styles: ["h2, p {color:red;}"]
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], ChildComponent);
+exports.ChildComponent = ChildComponent;
+//# sourceMappingURL=child.component.js.map
